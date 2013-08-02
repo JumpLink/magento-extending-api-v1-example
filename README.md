@@ -1,6 +1,8 @@
 magento-extending-api-v1-example
 ================================
 
+Tested on Magento 1.7
+
 Install
 -------
 
