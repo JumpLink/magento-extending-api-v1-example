@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <CompanyName_ModuleName>
+            <version>0.1.0</version>
+        </CompanyName_ModuleName>
+    </modules>
+    <api>
+        <resources>
+            <customer translate="title" module="xyz">
+                <model>CompanyName_ModuleName_Model_Api</model>
+                <title>Customer Resource</title>
+                <acl>customer</acl>
+                <methods>
+                    <info translate="title" module="xyz">
+                        <title>Retrieve customer data</title>
+                        <acl>customer/info</acl>
+                        <method>info</method>
+                    </info>
+                </methods>
+                <faults module="xyz">                   
+                </faults>
+            </customer>
+        </resources>
+        <acl>
+            <resources>
+                <customer translate="title" module="xyz">
+                    <title>Customers</title>
+                    <info translate="title" module="xyz">
+                        <title>Get Info Test</title>
+                    </info>
+                </customer>
+                <all>
+                </all>
+            </resources>
+        </acl>
+    </api>
+</config>
